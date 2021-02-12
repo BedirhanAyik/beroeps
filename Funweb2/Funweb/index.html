@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kip&Ei</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><body>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+
+
+<div class="w3-container">
+    <div class="w3-bar w3-black">
+        <a href="#Home" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+        <a href="#Menu Locatie" class="w3-bar-item w3-button w3-mobile">Menu</a>
+        <a href="#Menu Locatie" class="w3-bar-item w3-button w3-mobile">Locatie</a>
+        <a href="#Reserveren" class="w3-bar-item w3-button w3-mobile">Reserveren</a>
+    </div>
+</div>
+
+
+<div class="feature"></div>
+
+<div >
+    <img class="image" src="img/blog_after_omis.jpg">
+</div>
+
+
+<div class="content" id="Home">
+
+</div>
+<div class="Menu" id="Menu Locatie">
+    <h1>  Om het menu kaart te weergeven klik op de afbeelding  </h1>
+    <a href="menu.html" target="_blank" ">
+    <img alt="GeiBV" src="menu.png"
+         width=250" height="150"> <br>
+    </a>
+    <b>
+        <hr>
+        Address: Kemphaanpad 8, 1358 AC Almere<br>±±
+        Hours:<br>
+        Thursday	12:00 t/m 22:00<br>
+        Friday	    12:00 t/m 22:00<br>
+        Saturday	12:00 t/m 22:00<br>
+        Sunday	    12:00 t/m 22:00<br>
+        Monday	    12:00 t/m 22:00<br>
+        Tuesday	    12:00 t/m 22:00<br>
+        Wednesday	12:00 t/m 22:00<br>
+        <hr>
+    </b>
+
+
+
+</div>
+<div class="feature_content" id="Reserveren">
+    <center>
+        <form method="post" action="//submit.form" onSubmit="return validateForm();">
+            <div style="width: 400px;">
+            </div>
+            <div style="padding-bottom: 18px;font-size : 24px;"> <font color="white">Reservatie</font> </div>
+            <div style="padding-bottom: 18px;font-size : 18px;"><font color="white">We zouden u graag willen helpen met reserveren!</font></div>
+            <div style="padding-bottom: 18px;"><font color="white">naam</font><span style="color: red;"> *</span><br/>
+                <input type="text" id="data_3" name="data_3" style="width : 400px;" class="form-control"/>
+            </div>
+            <div style="padding-bottom: 18px;"><font color="white">Telefoon nummer</font><br/>
+                <input type="text" id="data_4" name="data_4" style="width : 400px;" class="form-control"/>
+            </div>
+            <div style="padding-bottom: 18px;"><font color="white">Email</font><br/>
+                <input type="text" id="data_5" name="data_5" style="width : 400px;" class="form-control"/>
+            </div>
+            <div style="padding-bottom: 18px;"><font color="white">Datum</font><span style="color: red;"> *</span><br/>
+                <input type="text" id="data_6" name="data_6" style="width : 250px;" class="form-control"/>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+            <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+            <div style="padding-bottom: 18px;"><font color="white">Tijd</font><span style="color: red;"> *</span><br/>
+                <input type="text" id="data_7" name="data_7" style="width : 250px;" class="form-control"/>
+            </div>
+            <div style="padding-bottom: 18px;"><font color="white">Aantal personen</font><span style="color: red;"> *</span><br/>
+                <select id="data_8" name="data_8" style="width : 250px;" class="form-control"><option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>10+ (Specify in Comments)</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;"><font color="white">Commentaar / vragen</font><br/>
+                <textarea id="data_9" false name="data_9" style="width : 400px;" rows="6" class="form-control"></textarea>
+            </div>
+            <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+            <div>
+                <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                <script src="https://www.100forms.com/js/FORMKEY:9K57HG2FLC7Q/SEND:my@email.com" type="text/javascript"></script>
+            </div>
+        </form>
+    </center>
+</div>
+
+
+<script>
+    function validateForm()
+    if (isEmpty(document.getElementById('data_3').value.trim()))
+        alert('Naam is required!');
+    return false;
+
+    if (!validateEmail(document.getElementById('data_5').value.trim()))
+        alert('Email must be a valid email address!');
+    return false;
+
+    if (isEmpty(document.getElementById('data_6').value.trim()))
+        alert('Datum is required!');
+    return false;
+
+    if (isEmpty(document.getElementById('data_7').value.trim()))
+        alert('Tijd is required!');
+    return false;
+
+    return true;
+
+    function isEmpty(str) { return (str.length === 0 || !str.trim());
+        function validateEmail(email)
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+        return isEmpty(email) || re.test(email);
+
+
+</script>
+
+</body>
+</html>

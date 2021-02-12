@@ -1,0 +1,99 @@
+body,html{
+    margin: 0;
+}
+body{
+    background-color: #ccccff;
+}
+
+.FOTObanner {
+    width: 100%;
+}
+#oblique {
+    font-style: oblique;
+    text-align: center;
+}
+.button {
+    display: block;
+    border-radius: 4px;
+    background-color: #232323;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+
+}
+#tedoen {
+    text-align: center;
+}
+.links {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#blique{
+    font-style: oblique;
+    text-align: center;
+}
+.Text1{
+    text-align: center;
+    font-size: 150%;
+    width: 1000px;
+    margin: 0 auto;
+
+
+}
+#fort1{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.youtube1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+html {
+    scroll-behavior: smooth;
+}
+#demobox {
+    background-color: #ccccff;
+    padding: 10px ;
+    border: 1px solid #ccccff;
+}
+.special{
+    color: #ccccff;
+    text-align: center;
+}
